@@ -20,9 +20,23 @@
 #include <iostream>
 using namespace std;
 
+int one();
+int two();
+
 int main()
 {
-	int sum = 0;
+    cout << "Problem #1:" << endl;
+    cout << one() << endl;
+
+    cout << "Problem #2:" << endl;
+    cout << two() << endl;
+    
+    return 0;
+}
+
+int one()
+{
+    int sum = 0;
 	for(int i = 0; i < 10; i++)
 	{
 		if(i%3==0)
@@ -34,5 +48,25 @@ int main()
 			sum+=i;
 		}
 	}
-	cout << sum << endl;
+	return(sum); 
+}
+
+int two()
+{
+	int prev = 1;
+	int current = 2;
+	int temp = 0;
+	int sum = 2;
+
+	while( current < 4000000 )
+	{
+		temp = current;
+		current = prev + current;
+		prev = temp;
+		if ( current % 2 == 0)
+		{
+			sum += current;
+		}
+	}
+	return(sum); 
 }
