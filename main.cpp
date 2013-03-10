@@ -17,11 +17,13 @@
 *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
 int one();
 int two();
+int three();
 
 int main()
 {
@@ -31,7 +33,10 @@ int main()
     cout << "Problem #2:" << endl;
     cout << two() << endl;
     
-    return 0;
+    cout << "Problem #3:" << endl;
+    cout << three() << endl;
+
+    return EXIT_SUCCESS;
 }
 
 int one()
@@ -69,4 +74,25 @@ int two()
 		}
 	}
 	return(sum); 
+}
+
+int three()
+{
+    long long int target = 600851475143;
+    long long j = 2;
+    long long prime = 1;
+
+    while( target != 1 )
+    {
+        while(target % j == 0 )
+        {
+           if( prime < j )
+           {
+               prime = j;
+           } 
+           target /= j;
+        }
+        j++;
+    }
+    return( prime );
 }
