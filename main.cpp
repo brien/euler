@@ -1,7 +1,7 @@
 //  A program to demonstrate solutions to the Project Euler problems.
 //  (projecteuler.net)
 //
-//  Copyright 2013 Brien Smith-Martinez
+//  Copyright 2013-2015 Brien Smith-Martinez
 //
 /*    This program is free software: you can redistribute it and/or modify
 *    it under the terms of the GNU General Public License as published by
@@ -24,6 +24,7 @@ using namespace std;
 int one();
 int two();
 int three();
+int four();
 
 int main()
 {
@@ -35,6 +36,9 @@ int main()
     
     cout << "Problem #3:" << endl;
     cout << three() << endl;
+
+    cout << "Problem #4:" << endl;
+    cout << four() << endl;
 
     return EXIT_SUCCESS;
 }
@@ -95,4 +99,43 @@ int three()
         j++;
     }
     return( prime );
+}
+
+bool IsPalindrome(unsigned int num)
+{
+	unsigned int reversed = 0;
+	unsigned int original = num;
+	if( num < 10 ) return 1;
+	if( num % 10 == 0) return 0;
+
+	while( num >= 1)
+	{
+		reversed = (reversed * 10) + (num % 10);
+		num = num/10;
+	}
+	return( original == reversed );
+}
+
+int four()
+{
+	unsigned int highestPalindrome = 0;
+	unsigned int x = 999;
+	unsigned int y = 999;
+	unsigned int product = 0;
+
+	while( x > 99 )
+	{
+		y = 999;
+		while( y  >= 99 )
+		{
+			product = x * y;
+			if (product > highestPalindrome && IsPalindrome( product ))
+			{
+				highestPalindrome = product;
+			}
+			y--;
+		}
+		x--;
+	}
+	return highestPalindrome;
 }
