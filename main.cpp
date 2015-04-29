@@ -25,6 +25,7 @@ int one();
 int two();
 int three();
 int four();
+long long int five();
 
 int main()
 {
@@ -39,6 +40,10 @@ int main()
 
     cout << "Problem #4:" << endl;
     cout << four() << endl;
+
+    cout << "Problem #5: (Incomplete)" << endl;
+    cout << five() << endl;
+
 
     return EXIT_SUCCESS;
 }
@@ -138,4 +143,15 @@ int four()
 		x--;
 	}
 	return highestPalindrome;
+}
+
+long long int five()
+{
+	long long int num = 2520;
+	for( int i = 11; i < 21; i++)
+	{
+		num *= i;
+	}
+	
+	return num;
 }
