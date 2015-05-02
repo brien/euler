@@ -152,6 +152,9 @@ long long int five()
 	{
 		num *= i;
 	}
-	
+	while (num > 1)
+	{
+		num--;
+	}	
 	return num;
 }
