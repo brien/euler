@@ -41,7 +41,7 @@ int main()
     cout << "Problem #4:" << endl;
     cout << four() << endl;
 
-    cout << "Problem #5: (Incomplete)" << endl;
+    cout << "Problem #5:" << endl;
     cout << five() << endl;
 
 
@@ -154,7 +154,6 @@ long long int five()
         	num % 14 != 0 || num % 15 != 0 || num % 16 != 0 || num % 17 != 0 ||
          	num % 18 != 0 || num % 19 != 0 || num % 20 != 0)
 	{
-		cout << num << endl;
 		num+=20;
 	}	
 
