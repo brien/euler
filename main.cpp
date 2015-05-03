@@ -154,6 +154,7 @@ long long int five()
 	}
 	while (num > 1)
 	{
+		cout << num << endl;
 		num--;
 	}	
 	return num;
