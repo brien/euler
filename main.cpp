@@ -26,6 +26,7 @@ int two();
 int three();
 int four();
 long long int five();
+int six();
 
 int main()
 {
@@ -43,6 +44,9 @@ int main()
 
     cout << "Problem #5:" << endl;
     cout << five() << endl;
+
+    cout << "Problem #6: Incompete" << endl;
+    cout << six() << endl;
 
 
     return EXIT_SUCCESS;
@@ -158,4 +162,9 @@ long long int five()
 	}	
 
 	return num;
+}
+
+int six()
+{
+	return 0;
 }
