@@ -26,7 +26,7 @@ int two();
 int three();
 int four();
 long long int five();
-int six();
+long int six();
 
 int main()
 {
@@ -45,7 +45,7 @@ int main()
     cout << "Problem #5:" << endl;
     cout << five() << endl;
 
-    cout << "Problem #6: Incompete" << endl;
+    cout << "Problem #6:" << endl;
     cout << six() << endl;
 
 
@@ -164,7 +164,13 @@ long long int five()
 	return num;
 }
 
-int six()
+long int six()
 {
-	return 0;
+	long int sum = 0;
+	long int squared = 0;
+	long int result = 0;
+
+	sum = 100 * (100 + 1)/2;
+	squared = (100 * (100 + 1) * (2 * 100 + 1)) / 6;
+	return (sum * sum) - squared;
 }
