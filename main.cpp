@@ -27,6 +27,7 @@ int three();
 int four();
 long long int five();
 long int six();
+long int seven();
 
 int main()
 {
@@ -47,6 +48,10 @@ int main()
 
     cout << "Problem #6:" << endl;
     cout << six() << endl;
+   
+    cout << "Problem #7:" << endl;
+    cout << seven() << endl;
+
 
 
     return EXIT_SUCCESS;
@@ -173,4 +178,51 @@ long int six()
 	sum = 100 * (100 + 1)/2;
 	squared = (100 * (100 + 1) * (2 * 100 + 1)) / 6;
 	return (sum * sum) - squared;
+}
+
+bool isPrime(long int num)
+{
+	if(num <= 1)
+	{
+		return false;
+	}
+
+	if(num == 2)
+	{
+		return true;
+	}
+	
+	if(num % 2 == 0)
+	{
+		return false;
+	}
+	int i = 3;
+	while( (i * i) <= num)
+	{
+		if(num % i == 0)
+		{
+			return false;
+		}
+		else
+		{
+			i += 2;
+		}
+	}
+
+	return true;
+}
+
+long int seven()
+{
+	int primecount = 1;
+	int num = 1;
+	while( primecount < 10001)
+	{
+		num = num + 2;
+		if( isPrime(num) )
+		{
+			primecount++;
+		}
+	}
+	return num;
 }
