@@ -28,6 +28,7 @@ int four();
 long long int five();
 long int six();
 long int seven();
+int eight();
 
 int main()
 {
@@ -225,4 +226,11 @@ long int seven()
 		}
 	}
 	return num;
+}
+
+int eight()
+{
+	int largest = 0;
+
+	return largest;
 }
