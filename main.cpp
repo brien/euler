@@ -238,7 +238,7 @@ int eight()
 	int num = 0;
 	for( int i = 0; i < p.length() - 4; i++)
 	{
-	
+		p.substr(i+1,1);	
 		if( num > largest )
 		{
 			largest = num;
