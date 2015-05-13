@@ -54,7 +54,7 @@ int main()
     cout << "Problem #7:" << endl;
     cout << seven() << endl;
 
-    cout << "Problem #8: Incomplete" << endl;
+    cout << "Problem #8:" << endl;
     cout << eight() << endl;
 
     return EXIT_SUCCESS;
@@ -238,7 +238,11 @@ int eight()
 	int num = 0;
 	for( int i = 0; i < p.length() - 4; i++)
 	{
-		p.substr(i+1,1);	
+		num  = atoi(p.substr(i,1).c_str()) * 
+		atoi(p.substr(i+1,1).c_str()) *
+		atoi(p.substr(i+2,1).c_str()) *
+		atoi(p.substr(i+3,1).c_str()) *
+		atoi(p.substr(i+4,1).c_str()) ;
 		if( num > largest )
 		{
 			largest = num;
