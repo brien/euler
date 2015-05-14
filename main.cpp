@@ -30,6 +30,7 @@ long long int five();
 long int six();
 long int seven();
 unsigned long long eight();
+int nine();
 
 int main()
 {
@@ -54,8 +55,12 @@ int main()
     cout << "Problem #7:" << endl;
     cout << seven() << endl;
 
-    cout << "Problem #8 Incomplete:" << endl;
+    cout << "Problem #8:" << endl;
     cout << eight() << endl;
+
+    cout << "Problem #9: Incomplete" << endl;
+    cout << nine() << endl;
+
 
     return EXIT_SUCCESS;
 }
@@ -250,4 +255,9 @@ unsigned long long  eight()
 	}
  
 	return largest;
+}
+
+int nine()
+{
+	return 0;
 }
