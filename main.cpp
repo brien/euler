@@ -259,5 +259,22 @@ unsigned long long  eight()
 
 int nine()
 {
-	return 0;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int cir = 1000;
+	int ret = 0;
+	for( a = 1; a < cir / 3; a++)
+	{
+		for( b = a; b < cir / 2; b++)
+		{
+			c = cir - a - b;
+			if( a * a + b * b == c * c)
+			{
+				ret = a*b*c;
+				break;
+			}
+		}
+	}
+	return ret;
 }
