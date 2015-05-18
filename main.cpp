@@ -58,7 +58,7 @@ int main()
     cout << "Problem #8:" << endl;
     cout << eight() << endl;
 
-    cout << "Problem #9: Incomplete" << endl;
+    cout << "Problem #9:" << endl;
     cout << nine() << endl;
 
 
