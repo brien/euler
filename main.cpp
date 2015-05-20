@@ -31,6 +31,7 @@ long int six();
 long int seven();
 unsigned long long eight();
 int nine();
+unsigned long ten();
 
 int main()
 {
@@ -277,4 +278,9 @@ int nine()
 		}
 	}
 	return ret;
+}
+
+unsigned long ten()
+{
+	return 0;
 }
