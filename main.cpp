@@ -61,6 +61,11 @@ int main()
 
     cout << "Problem #9:" << endl;
     cout << nine() << endl;
+   
+
+	 cout << "Problem #10: Incomplete" << endl;
+    	cout << ten() << endl;
+
 
 
     return EXIT_SUCCESS;
