@@ -35,40 +35,38 @@ unsigned long ten();
 
 int main()
 {
-    cout << "Problem #1:" << endl;
-    cout << one() << endl;
+	cout << "Problem #1:" << endl;
+	cout << one() << endl;
 
-    cout << "Problem #2:" << endl;
-    cout << two() << endl;
-    
-    cout << "Problem #3:" << endl;
-    cout << three() << endl;
+	cout << "Problem #2:" << endl;
+	cout << two() << endl;
+ 
+	cout << "Problem #3:" << endl;
+	cout << three() << endl;
 
-    cout << "Problem #4:" << endl;
-    cout << four() << endl;
+    	cout << "Problem #4:" << endl;
+    	cout << four() << endl;
 
-    cout << "Problem #5:" << endl;
-    cout << five() << endl;
+    	cout << "Problem #5:" << endl;
+    	cout << five() << endl;
 
-    cout << "Problem #6:" << endl;
-    cout << six() << endl;
+    	cout << "Problem #6:" << endl;
+    	cout << six() << endl;
    
-    cout << "Problem #7:" << endl;
-    cout << seven() << endl;
+    	cout << "Problem #7:" << endl;
+    	cout << seven() << endl;
 
-    cout << "Problem #8:" << endl;
-    cout << eight() << endl;
+    	cout << "Problem #8:" << endl;
+    	cout << eight() << endl;
 
-    cout << "Problem #9:" << endl;
-    cout << nine() << endl;
+    	cout << "Problem #9:" << endl;
+    	cout << nine() << endl;
    
-
-	 cout << "Problem #10: Incomplete" << endl;
+	cout << "Problem #10: Incomplete" << endl;
     	cout << ten() << endl;
 
 
-
-    return EXIT_SUCCESS;
+	return EXIT_SUCCESS;
 }
 
 int one()
