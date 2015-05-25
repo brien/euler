@@ -71,7 +71,7 @@ int main()
 
 int one()
 {
-    int sum = 0;
+	int sum = 0;
 	for(int i = 0; i < 10; i++)
 	{
 		if(i%3==0)
@@ -108,23 +108,23 @@ int two()
 
 int three()
 {
-    long long int target = 600851475143;
-    long long j = 2;
-    long long prime = 1;
+	long long int target = 600851475143;
+	long long j = 2;
+	long long prime = 1;
 
-    while( target != 1 )
-    {
-        while(target % j == 0 )
-        {
-           if( prime < j )
-           {
-               prime = j;
-           } 
-           target /= j;
-        }
-        j++;
-    }
-    return( prime );
+	while( target != 1 )
+	{
+		while(target % j == 0 )
+		{
+			if( prime < j )
+			{
+				prime = j;
+			}
+			target /= j;
+		}
+		j++;
+	}
+	return( prime );
 }
 
 bool IsPalindrome(unsigned int num)
