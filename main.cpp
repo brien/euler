@@ -285,5 +285,11 @@ int nine()
 
 unsigned long ten()
 {
+	// Sieve of Eratosthenes
+	//1. Create list of consecutive integers
+	//2. Select p as the first prime number in the list
+	//3. Remove all multiples of p from list
+	//4. Set p equal to the next integer in the list which has not been reomved
+	//5.Repeat #3 and 4 until p^2 > N.
 	return 0;
 }
