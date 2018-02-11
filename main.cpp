@@ -62,7 +62,7 @@ int main()
     	cout << "Problem #9:" << endl;
     	cout << nine() << endl;
    
-	cout << "Problem #10: Incomplete" << endl;
+	cout << "Problem #10:" << endl;
     	cout << ten() << endl;
 
 
@@ -285,11 +285,19 @@ int nine()
 
 unsigned long ten()
 {
+	unsigned long sum = 0;
+	for(int i=0; i < 2000000; i++)
+	{
+		if(isPrime(i))
+			sum += i;
+	}
+	return sum;
+	// Improvement, try this instead:
 	// Sieve of Eratosthenes
 	//1. Create list of consecutive integers
 	//2. Select p as the first prime number in the list
 	//3. Remove all multiples of p from list
 	//4. Set p equal to the next integer in the list which has not been reomved
 	//5.Repeat #3 and 4 until p^2 > N.
-	return 0;
+	//return 0;
 }
